@@ -26,8 +26,8 @@ PurchaseReceiptEmail.PreviewProps = {
     imagePath:
       "/products/6b9116e9-3dc0-4b08-afbe-38cb6f740d56-Zrzut ekranu 2024-07-8 o 13.07.30.png",
   },
-  order: { id: "123", createdAt: new Date(), pricePaid: 1000 },
-  downloadVerificationId: "1234",
+  order: { id: crypto.randomUUID(), createdAt: new Date(), pricePaid: 1000 },
+  downloadVerificationId: crypto.randomUUID(),
 } satisfies PurchaseReceiptEmailProps;
 
 export default function PurchaseReceiptEmail({
